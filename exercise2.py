@@ -20,7 +20,7 @@ dash._dash_renderer._set_react_version("18.2.0")
 app = Dash()
 
 # Layout, to use dash mantine components, you need to wrap your app with MantineProvider,
-# Replace the html.Div() with layout components
+# TODO: Replace the html.Div() with layout components
 app.layout = dmc.MantineProvider(html.Div())
 
 if __name__ == "__main__":

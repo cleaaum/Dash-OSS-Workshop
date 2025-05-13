@@ -1,14 +1,14 @@
 # Dash OSS Workshop
 
-Welcome to the Dash workshop! This hands-on session will walk you through building an interactive, data, web applications using the Dash framework and Plotly visualizations. The workshop is designed as a **code-along** so we will go through each exercise in this workshop together.
+Welcome to the Dash workshop! This hands-on session will walk you through building an interactive, data/web application using the Dash framework and Plotly visualizations. The workshop is designed as a **code-along** so we will go through each exercise in this workshop together.
 
 ## What We'll Cover
 
-I'll introduce the key concepts of Dash and progressively build out an applications using several Dash libraries and open-source components:
+I'll introduce the key concepts of Dash and progressively build out an application using several open-source component libraries and Plotly visualizations.
 
 ### ⚡ What is Dash?
 
-[Dash](https://dash.plotly.com/) is a Python framework for building interactive web applications—no JavaScript required. It’s ideal for data scientists and analysts who want to share insights through custom web interfaces using only Python.
+[Dash](https://dash.plotly.com/) is a Python framework for building interactive web applications without JavaScript. It’s ideal for data scientists and analysts who want to share insights through custom web interfaces using only Python. You can find some example Dash applications [here](https://dash.gallery/Portal/).
 
 ### 📊 What is Plotly?
 
@@ -16,13 +16,12 @@ I'll introduce the key concepts of Dash and progressively build out an applicati
 
 ## Libraries We’ll Use
 
-Throughout the workshop, we’ll use a few key Dash libraries:
+Throughout the workshop, we’ll use a few key libraries:
 
 - 🧩 [Dash Core Components (DCC)](https://dash.plotly.com/dash-core-components): Basic interactive components like dropdowns, sliders, and graphs.
-- 🧱 [Dash HTML Components (part of Dash)](https://dash.plotly.com/dash-html-components): HTML tags rendered with Python.
 - 🎨 [Dash Mantine Components (DMC)](https://www.dash-mantine-components.com/): A library of beautiful, customizable UI components.
-- 📦 [Dash Bootstrap Components (DBC)](https://dash-bootstrap-components.opensource.faculty.ai/): Layout and UI components styled with Bootstrap.
-- 📊 [Dash AG Grid](https://dash.plotly.com/datagrid): A powerful and fast table component for displaying and editing large datasets.
+- 📦 [Dash Bootstrap Components (DBC)](https://dash-bootstrap-components.opensource.faculty.ai/docs/components/): Layout and UI components styled with Bootstrap.
+- 📊 [Dash AG Grid](https://dash.plotly.com/dash-ag-grid): A powerful and fast table component for displaying and editing large datasets.
 
 ## Workshop Format
 
@@ -37,6 +36,6 @@ Throughout the workshop, we’ll use a few key Dash libraries:
 
 ## Dataset
 
-This workshop uses the **Netflix Titles dataset**, which contains metadata about TV shows and movies available on Netflix. It’s a simple and approachable dataset that works well for interactive visualizations and dashboards.
+This workshop uses the [Netflix Titles dataset](https://www.kaggle.com/datasets/shivamb/netflix-shows), which contains metadata about TV shows and movies available on Netflix. It’s a simple and approachable dataset that works well for interactive visualizations and dashboards.
 
 If you’re interested in exploring other datasets, a great place to start is [Kaggle Datasets](https://www.kaggle.com/datasets), where you’ll find thousands of open datasets across a wide range of topics.

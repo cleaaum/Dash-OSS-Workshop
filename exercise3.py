@@ -13,19 +13,19 @@ import plotly.express as px
 app = Dash()
 
 # Insert the path to the CSV file
-# df = pd.read_csv("")
+# TODO: df = pd.read_csv("")
 # print(df)
 
 # Manipulate the data as needed
-# df = ...
+# TODO: df = ...
 
-# Make fig1: Line chart
+# TODO: Make fig1: Line chart
 line_fig = px.line()
 
-# Make fig 2: Bar chart
+# TODO: Make fig 2: Bar chart
 bar_fig = px.bar()
 
-# Make fig 3: Pie chart
+# TODO: Make fig 3: Pie chart
 pie_fig = px.pie()
 
 app.layout = dmc.MantineProvider(

@@ -7,6 +7,7 @@ import dash_mantine_components as dmc
 import pandas as pd
 import plotly.express as px
 import dash_ag_grid as dag
+
 app = Dash()
 
 # Read Data
@@ -51,17 +52,14 @@ app.layout = dmc.MantineProvider(
             ),
             # Add a Dropdown
             dmc.Select(data=df["type"].unique(), value=df["type"][0], id="dropdown"),
-            
             dmc.Title("Content Release Over Years", order=3, mt="xl"),
             dcc.Graph(figure=line_fig, id="line-fig"),
-            
             dmc.Title("Ratings Distribution", order=3),
             dcc.Graph(figure=bar_fig),
-            
             dmc.Title("Top Countries", order=3, mt="xl"),
             dcc.Graph(figure=pie_fig),
             # Add Grd Here
-            dag.AgGrid()
+            dag.AgGrid(),
         ],
         size="lg",
     )
