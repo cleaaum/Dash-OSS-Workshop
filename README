@@ -1,18 +1,18 @@
-# Dash Workshop
+# Dash OSS Workshop
 
-Welcome to the Dash workshop! This hands-on session will walk you through building interactive, data-driven web applications using Plotly's Dash framework. The workshop is designed as a **code-along** and is beginner-friendly.
+Welcome to the Dash workshop! This hands-on session will walk you through building an interactive, data, web applications using the Dash framework and Plotly visualizations. The workshop is designed as a **code-along** so we will go through each exercise in this workshop together.
 
 ## What We'll Cover
 
-We'll introduce the key concepts of Dash and progressively build applications using several Dash libraries and components:
+I'll introduce the key concepts of Dash and progressively build out an applications using several Dash libraries and open-source components:
+
+### ⚡ What is Dash?
+
+[Dash](https://dash.plotly.com/) is a Python framework for building interactive web applications—no JavaScript required. It’s ideal for data scientists and analysts who want to share insights through custom web interfaces using only Python.
 
 ### 📊 What is Plotly?
 
 [Plotly](https://plotly.com/python/) is a powerful open-source graphing library for Python. It enables the creation of interactive, publication-quality visualizations across a wide variety of chart types — from line plots to 3D surfaces.
-
-### ⚡ What is Dash?
-
-[Dash](https://dash.plotly.com/) is a Python framework for building interactive web applications—no JavaScript required. It’s ideal for data scientists and analysts who want to share insights through custom web interfaces.
 
 ## Libraries We’ll Use
 
@@ -28,14 +28,15 @@ Throughout the workshop, we’ll use a few key Dash libraries:
 
 - The workshop is organized into a series of **exercises**.
 - Each exercise contains a **step-by-step coding task**.
-- You’ll code along with the instructor during the session.
+- You’ll code along with me during the session.
 - Once an exercise is completed, we’ll move on to the next one.
-- Each new exercise folder will include:
-  - The **solution** to the previous exercise.
-  - A new set of instructions to complete.
+- Each new exercise will include:
+  - The **solution** to the previous exercise
+  - A new set of instructions to complete
+- This way each exercise adds one layer of complexity to the application
 
-> 💡 The workshop is fully interactive. You'll build apps live and have a complete working application by the end.
+## Dataset
 
----
+This workshop uses the **Netflix Titles dataset**, which contains metadata about TV shows and movies available on Netflix. It’s a simple and approachable dataset that works well for interactive visualizations and dashboards.
 
-Feel free to fork the repo and customize as needed!
+If you’re interested in exploring other datasets, a great place to start is [Kaggle Datasets](https://www.kaggle.com/datasets), where you’ll find thousands of open datasets across a wide range of topics.

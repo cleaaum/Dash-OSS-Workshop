@@ -61,7 +61,7 @@ app.layout = dmc.MantineProvider(
             dmc.Title("Top Countries", order=3, mt="xl"),
             dcc.Graph(figure=pie_fig),
             # Add Grd Here
-            dag.AgGrid()
+            dag.AgGrid(columnDefs=[])
         ],
         size="lg",
     )
