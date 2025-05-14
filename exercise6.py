@@ -3,11 +3,13 @@ Exercise 6
 Add a style sheet. Under assets/ you will find a styles.css style sheet. 
 Comment out the style to see how it affects the app, and add any other styles to the app.
 """
+
 from dash import Dash, dash, dcc, Input, Output, callback
 import dash_mantine_components as dmc
 import pandas as pd
 import plotly.express as px
 import dash_ag_grid as dag
+
 dash._dash_renderer._set_react_version("18.2.0")
 app = Dash()
 

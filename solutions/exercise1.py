@@ -2,6 +2,7 @@
 Exercise 1
 Make a Dash app, Just run this. Install the dependencies using pip install -r requirements.txt
 """
+
 from dash import Dash, dash, html
 
 

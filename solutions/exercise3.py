@@ -6,6 +6,7 @@ Add interactivity
 - add a dropdown 
 - link the dropdown to the graph
 """
+
 from dash import Dash, dash, html, dcc, Input, State, Output, callback
 import dash_mantine_components as dmc
 import pandas as pd

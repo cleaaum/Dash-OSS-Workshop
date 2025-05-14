@@ -8,6 +8,7 @@ and Dash Core Components (https://dash.plotly.com/dash-core-components), create 
 - Paper (DMC)
 - Graph (DCC)
 """
+
 import pandas as pd
 from dash import Dash, html, dcc, dash
 import dash_mantine_components as dmc

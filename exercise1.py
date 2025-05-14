@@ -6,6 +6,7 @@ Run an empty Dash app.
 - Run the app with $ python exercise1.py
 - You should see the dev tools on the bottom right of the app in your browser
 """
+
 from dash import Dash, html
 
 

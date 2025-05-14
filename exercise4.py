@@ -4,10 +4,12 @@ Add interactivity to the application by adding callbacks
 - add a dropdown 
 - link the dropdown to the graph via the provided callback below
 """
+
 from dash import Dash, dash, dcc, Input, State, Output, callback
 import dash_mantine_components as dmc
 import pandas as pd
 import plotly.express as px
+
 dash._dash_renderer._set_react_version("18.2.0")
 app = Dash()
 
