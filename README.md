@@ -12,7 +12,7 @@ I'll introduce the key concepts of Dash and progressively build out an applicati
 
 ### 📊 What is Plotly?
 
-[Plotly](https://plotly.com/python/) is a powerful open-source graphing library for Python. It enables the creation of interactive, publication-quality visualizations across a wide variety of chart types — from line plots to 3D surfaces.
+[Plotly](https://plotly.com/python/) is an open-source graphing library for Python. It enables the creation of interactive visualizations across a wide variety of chart types — from line plots to 3D surfaces.
 
 ## Libraries We’ll Use
 
