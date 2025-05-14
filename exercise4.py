@@ -67,7 +67,7 @@ app.layout = dmc.MantineProvider(
 )
 
 
-# TODO: Add a callback
+# TODO: Add a callback, # Input("id", "property")
 # @callback(
 #     Output("", ""),
 #     Input("", ""),

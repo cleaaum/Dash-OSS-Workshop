@@ -52,7 +52,7 @@ app.layout = dmc.MantineProvider(
                 ],
                 grow=True,
             ),
-            dmc.Select(data=df["type"].unique(), value=df["type"][0], id="dropdown"),
+            dmc.Select(data=['TV Show', 'Movie'], value="Movie", id="dropdown"),
             dmc.Title("Content Release Over Years", order=3, mt="xl"),
             dcc.Graph(figure=line_fig, id="line-fig"),
             dmc.Title("Ratings Distribution", order=3),
