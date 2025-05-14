@@ -20,23 +20,7 @@ app = Dash()
 
 # Layout, to use dash mantine components, you need to wrap your app with MantineProvider,
 # TODO: Replace the html.Div() with layout components
-app.layout = dmc.MantineProvider(
-    dmc.Container(
-        [
-            dmc.Title("Netflix Insights",order=1),
-            dmc.Group(
-                [
-                    dmc.Paper("text 1", shadow="xs", p="xs"),
-                    dmc.Paper("text 1", shadow="xs", p="xs"),
-                    dmc.Paper("text 1", shadow="xs", p="xs"),
-                ],
-                grow=True,
-            ),
-            dmc.Title("Content Release Over Years", order=3, mt="xl"),
-            dcc.Graph()
-        ]
-    )
-)
+app.layout = dmc.MantineProvider(html.Div())
 
 if __name__ == "__main__":
     app.run(debug=True)
