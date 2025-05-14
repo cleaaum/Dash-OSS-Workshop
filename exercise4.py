@@ -4,17 +4,19 @@ Add interactivity to the application by adding callbacks
 - add a dropdown 
 - link the dropdown to the graph via the provided callback below
 """
-from dash import Dash, dash, html, dcc, Input, State, Output, callback
+
+from dash import Dash, dash, dcc, Input, State, Output, callback
 import dash_mantine_components as dmc
 import pandas as pd
 import plotly.express as px
 
+dash._dash_renderer._set_react_version("18.2.0")
 app = Dash()
 
 # Read Data
 df = pd.read_csv("data/netflix_titles.csv")
 
-# Make fig1: Line chart
+# Line chart
 year_counts = (
     df["release_year"].value_counts().reset_index().sort_values(by="release_year")
 )
@@ -24,14 +26,14 @@ line_fig = px.line(
     labels={"x": "Year", "y": "Releases"},
 )
 
-# Make fig 2: Bar chart
+# Bar chart
 rating_counts = df["rating"].value_counts().reset_index()
 bar_fig = px.bar(
     x=rating_counts["rating"],
     y=rating_counts["count"],
     labels={"x": "Rating", "y": "Count"},
 )
-# Make fig 3: Pie chart
+# Pie chart
 country_counts = df["country"].dropna().value_counts()
 pie_fig = px.pie(
     names=country_counts.head(5).index,
@@ -51,7 +53,7 @@ app.layout = dmc.MantineProvider(
                 ],
                 grow=True,
             ),
-            # Add a Dropdown
+            # TODO: Add a Dropdown
             dmc.Select(),
             dmc.Title("Content Release Over Years", order=3, mt="xl"),
             dcc.Graph(figure=line_fig),
@@ -65,7 +67,7 @@ app.layout = dmc.MantineProvider(
 )
 
 
-# Add a callback
+# TODO: Add a callback
 # @callback(
 #     Output("", ""),
 #     Input("", ""),

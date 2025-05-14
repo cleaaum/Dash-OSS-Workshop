@@ -8,10 +8,9 @@ and Dash Core Components (https://dash.plotly.com/dash-core-components), create 
 - Paper (DMC)
 - Graph (DCC)
 """
-import pandas as pd
+
 from dash import Dash, html, dcc, dash
 import dash_mantine_components as dmc
-import plotly.express as px
 
 # pinning react version to 18.2.0 as required by dash-mantine-components
 dash._dash_renderer._set_react_version("18.2.0")
@@ -20,7 +19,7 @@ dash._dash_renderer._set_react_version("18.2.0")
 app = Dash()
 
 # Layout, to use dash mantine components, you need to wrap your app with MantineProvider,
-# Replace the html.Div() with layout components
+# TODO: Replace the html.Div() with layout components
 app.layout = dmc.MantineProvider(html.Div())
 
 if __name__ == "__main__":
