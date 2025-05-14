@@ -1,1 +1,0 @@
-web: gunicorn exercise6:server --workers 2

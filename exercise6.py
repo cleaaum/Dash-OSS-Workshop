@@ -12,7 +12,7 @@ import dash_ag_grid as dag
 
 dash._dash_renderer._set_react_version("18.2.0")
 app = Dash()
-server = app.server
+
 # Read Data
 df = pd.read_csv("data/netflix_titles.csv")
 
