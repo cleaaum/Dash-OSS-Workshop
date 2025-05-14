@@ -2,12 +2,12 @@
 Exercise 5
 Add an Ag Grid table at the botton of the layout.
 """
-from dash import Dash, dash, html, dcc, Input, State, Output, callback
+from dash import Dash, dash, dcc, Input, State, Output, callback
 import dash_mantine_components as dmc
 import pandas as pd
 import plotly.express as px
 import dash_ag_grid as dag
-
+dash._dash_renderer._set_react_version("18.2.0")
 app = Dash()
 
 # Read Data

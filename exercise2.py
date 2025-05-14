@@ -8,10 +8,8 @@ and Dash Core Components (https://dash.plotly.com/dash-core-components), create 
 - Paper (DMC)
 - Graph (DCC)
 """
-import pandas as pd
 from dash import Dash, html, dcc, dash
 import dash_mantine_components as dmc
-import plotly.express as px
 
 # pinning react version to 18.2.0 as required by dash-mantine-components
 dash._dash_renderer._set_react_version("18.2.0")

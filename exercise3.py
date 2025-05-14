@@ -5,14 +5,16 @@ Add data to the application and make 3 plotly charts! https://plotly.com/python/
 - filter and shape the data as needed
 - create three plotly figures (bar, line, pie charts, or anything else you like)
 """
-from dash import Dash, dash, html, dcc, Input, State, Output, callback
+from dash import Dash, dash, dcc
 import dash_mantine_components as dmc
 import pandas as pd
 import plotly.express as px
-
+dash._dash_renderer._set_react_version("18.2.0")
 app = Dash()
 
-# Insert the path to the CSV file
+# Pandas is a library for tabular data manipulation and analysis, offering fast, 
+# flexible data structures like DataFrames and Series.
+# Insert the path to the CSV file to read the data from teh csv and put into a dataframe
 # TODO: df = pd.read_csv("")
 # print(df)
 
